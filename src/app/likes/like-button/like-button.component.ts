@@ -3,7 +3,9 @@ import {
   ChangeDetectionStrategy,
   Component,
   OnInit,
+  WritableSignal,
   inject,
+  signal,
 } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -32,7 +34,7 @@ export class LikeButtonComponent implements OnInit {
   private readonly _likeRepository = inject(LikeRepository);
   private readonly _snackBar = inject(MatSnackBar);
 
-  protected likes: number = -1;
+  protected likes: WritableSignal<number> = signal(-1);
 
   ngOnInit(): void {
     this.loadLikes_FireAndForget();
@@ -52,7 +54,8 @@ export class LikeButtonComponent implements OnInit {
 
   private async loadLikes_FireAndForget(): Promise<void> {
     try {
-      this.likes = await this._likeRepository.getCountAsync();
+      const likeCount = await this._likeRepository.getCountAsync();
+      this.likes.set(likeCount);
     } catch (error) {
       console.warn('Could not retrieve like count from server.', error);
     }

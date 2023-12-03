@@ -5,15 +5,16 @@
   aria-label="like button"
   (click)="onClickAsync()"
 >
-  <div
-    [matBadge]="likes"
-    matBadgeColor="accent"
-    matBadgePosition="above after"
-    [matBadgeHidden]="likes === -1"
-    matBadgeSize="small"
-    [@singleHeartBeat]="badgeState"
-    (@singleHeartBeat.done)="badgeState = ''"
-  ></div>
+  @if (likes() !== -1) {
+    <div
+      [matBadge]="likes()"
+      matBadgeColor="accent"
+      matBadgePosition="above after"
+      matBadgeSize="small"
+      [@singleHeartBeat]="badgeState"
+      (@singleHeartBeat.done)="badgeState = ''"
+    ></div>
+  }
   <mat-icon
     area-hidden="false"
     i18n-aria-label

@@ -17,7 +17,7 @@
         "sourceLocale": "en-US",
         "locales": {
           "de": {
-            "translation": "src/locales/messages.de.json",
+            "translation": "src/locales/locale.de.json",
             "baseHref": "/de/"
           }
         }
@@ -127,7 +127,9 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "buildTarget": "robin-daub-website:build",
-            "outputPath": "src/locales"
+            "outputPath": "src/locales",
+            "format": "json",
+            "outFile": "locale.json"
           }
         },
         "test": {
