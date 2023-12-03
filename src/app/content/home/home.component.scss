@@ -5,9 +5,7 @@
   flex-direction: row;
   gap: 2em;
   flex-wrap: wrap;
-  
-  max-width: 1300px;
-  margin: 0 auto;
+  justify-content: center;
 }
 
 // ToDo: set second card as first card on mobile view (Resume card) 

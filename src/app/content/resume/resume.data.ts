@@ -45,8 +45,15 @@ export const RESUME_ENTRIES: Resume[] = [
   {
     profession: `Back-End Software Developer`,
     start: 2023,
-    end: null,
+    end: 2023,
     location: `Innoversa Factory GmbH (Start-up), Heidelberg`,
     description: `Development of modular tools in Unity, to improve development time and flexibilty of designers.`,
+  },
+  {
+    profession: `Software Developer`,
+    start: 2023,
+    end: null,
+    location: `AraCom IT Services GmbH, Gersthofen`,
+    description: `Full Stack Development of Webapplications in the industries construction and logistic. Further will come.`,
   },
 ];
