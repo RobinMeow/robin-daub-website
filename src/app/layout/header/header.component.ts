@@ -15,6 +15,7 @@ import { MatSnackBarModule, MatSnackBar } from '@angular/material/snack-bar';
 import { LikeButtonComponent } from '@likes';
 import { THEMES, ThemeSwitcherService } from '@theming';
 import { LocaleSelectionComponent } from '@locale';
+import { GitHubIconComponent } from '@shared/icons';
 
 @Component({
   selector: 'layout-header',
@@ -31,6 +32,7 @@ import { LocaleSelectionComponent } from '@locale';
     NgOptimizedImage,
     MatSnackBarModule,
     LikeButtonComponent,
+    GitHubIconComponent,
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
