@@ -1,0 +1,15 @@
+
+.container {
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	height: 100%;
+}
+
+.sidenav {
+	padding: 0;
+}
+
+@media(max-width: 600px){
+	.sidenav {
+		width: 100%;
+	}
+}
