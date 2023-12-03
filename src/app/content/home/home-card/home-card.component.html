@@ -1,0 +1,50 @@
+<mat-card
+  class="card"
+  matRipple
+  [matRippleRadius]="20"
+  [matRippleUnbounded]="true"
+  matRippleColor="accent"
+>
+  <mat-card-header>
+    <mat-card-subtitle [innerHTML]="homeCard.subtitle" />
+    <mat-card-title [innerHTML]="homeCard.title" />
+  </mat-card-header>
+
+  <mat-card-content>
+    <p [innerHTML]="homeCard.description"></p>
+    <mat-divider aria-hidden="true" />
+  </mat-card-content>
+
+  <img
+    mat-card-image
+    class="card-image"
+    [ngSrc]="homeCard.imageSource"
+    i18n-alt
+    [alt]="homeCard.imageAlt"
+    width="262"
+    height="289"
+    priority
+  />
+
+  <mat-card-actions>
+    <button
+      mat-raised-button
+      color="accent"
+      class="read-bio-button"
+      [disabled]="homeCard.disabled"
+      [routerLink]="homeCard.routerLink"
+    >
+      <mat-icon aria-hidden="true" [innerHTML]="homeCard.matIconName" />
+      {{ homeCard.buttonText }}
+    </button>
+  </mat-card-actions>
+
+  <mat-card-footer>
+    <mat-progress-bar
+      color="accent"
+      mode="determinate"
+      value="100"
+      aria-hidden="true"
+    />
+  </mat-card-footer>
+</mat-card>

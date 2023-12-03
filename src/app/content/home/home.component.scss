@@ -1,0 +1,24 @@
+.portal-container {
+  box-sizing: border-box;
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  flex-wrap: wrap;
+  
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+// ToDo: set second card as first card on mobile view (Resume card) 
+
+@media(max-width: 800px){
+  .portal-container {
+      padding: 1em 0;
+      max-width: 800px; // not needed. But better safe than sorry 
+  }
+  
+  .app-card {
+      margin: 0 auto;
+  }
+}

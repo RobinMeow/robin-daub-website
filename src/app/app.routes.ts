@@ -69,14 +69,12 @@ export const routes: Routes = [
     pathMatch: 'full',
   },
 
-  // {
-  //   path: '',
-  //   loadComponent: () =>
-  //     import('src/app/content/home/home.component').then(
-  //       (c) => c.HomeComponent,
-  //     ),
-  //   title: `Robin Daubenschütz`,
-  // },
+  {
+    path: '',
+    loadComponent: async () =>
+      (await import('src/app/content/home/home.component')).HomeComponent,
+    title: `Robin Daubenschütz`,
+  },
   {
     path: 'home',
     redirectTo: '',
