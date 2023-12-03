@@ -1,0 +1,6 @@
+@for (emptyStr of [].constructor(rating); track $index) {
+  <mat-icon aria-hidden="true" fontIcon="star" color="accent" />
+}
+@for (emptyStr of [].constructor(maxRating - rating); track $index) {
+  <mat-icon aria-hidden="true" fontIcon="star" class="disabled" />
+}

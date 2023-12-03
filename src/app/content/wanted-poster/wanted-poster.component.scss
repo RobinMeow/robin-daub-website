@@ -1,0 +1,156 @@
+// https://fonts.google.com/specimen/Rye
+
+// If a sequence of identifiers is given as a font family name, the computed value is the name converted to a string by joining all the identifiers in the sequence by single spaces.
+// => converted to a string, so use the string!
+
+/* rye-regular - latin_latin-ext (Not Best Support but Modern Browser, because some blod article said that experts ONLY recommend woff and woff2 nowadays.) */
+// Quoting from web.dev: In fact, we think it is also time to proclaim: Use only WOFF2 and forget about everything else
+// see for modern browser: https://gwfh.mranftl.com/fonts/rye?subsets=latin,latin-ext  google-webfonts-helper
+@font-face {
+  font-display: swap; // Avoid invisble Font: https://developer.chrome.com/docs/lighthouse/performance/font-display/?utm_source=lighthouse&utm_medium=devtools /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Rye';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../../assets/fonts/rye-v13-latin_latin-ext-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+          url('../../../assets/fonts/rye-v13-latin_latin-ext-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+
+}
+
+.background {
+  overflow: hidden;
+  position: relative; // required by ngSrc
+  height: 1520px;
+}
+
+.darken {
+  filter: brightness(0.85);
+}
+
+.wanted-poster{
+  font-family: 'Rye', Sans-Serif;
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.87);
+  transform: rotate(-3.5deg);
+}
+
+.wanted-heading{
+  font-size: 5em;   
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.spacer{
+  height: 100px;
+}
+
+.specifications tr > td:first-of-type {
+  min-width: 230px;
+  max-width: 230px;
+}
+
+// TODO: Media query to have the image and font smaller
+.heading{
+  display: flex;
+  justify-items: center;
+  flex-flow: column;
+  align-items: center;
+}
+.striked-dead-or{
+  font-size: 0.5em;
+}
+
+// If you see this, please let me know if you have an better idea, except for mobile first, I dont care about mobile first anymore at this point. I dont know a better approach for responsive design.
+// found it myself: https://material.angular.io/cdk/layout/overview Now I need time :D 
+
+@media(max-width: 800px){ 
+  .wanted-poster{
+      font-size: 1.2em;
+  }
+  .wanted-heading{
+      font-size: 3.5em;
+  }
+  #imgRobin{
+      width: 400px;
+      height: 400px;
+  }
+  .specifications tr > td:first-of-type {
+      min-width: 200px;
+      max-width: 200px;
+  }
+  .background{
+      height: 1200px;
+  }
+}
+
+// copy pasted from styles.scss (the condition)
+@media(max-width: 600px){ 
+  .wanted-poster{
+      font-size: 1em;
+  }
+  .wanted-heading{
+      font-size: 3em;
+  }
+  #imgRobin{
+      width: 300px;
+      height: 300px;
+  }
+  .specifications tr > td:first-of-type {
+      min-width: 160px;
+      max-width: 160px;
+  }
+  .background{
+      height: 1100px;
+  }
+}
+
+// copy pasted from styles.scss (the condition)
+@media(max-width: 430px){ 
+  #imgRobin{
+      width: 280px;
+      height: 280px;
+  }
+  .specifications tr > td {
+      min-width: 160px;
+      max-width: 160px;
+  }
+  .wantedFor{
+      width: 340px;
+      text-align: center;
+  }
+}
+
+// copy pasted from styles.scss (the condition)
+@media(max-width: 380px){ 
+  .wanted-heading{
+      font-size: 2.7em;
+  }
+  #imgRobin{
+      width: 270px;
+      height: 270px;
+  }
+  .specifications tr > td {
+      min-width: 140px;
+      max-width: 140px;
+  }
+  .wanted-poster{
+      transform: rotate(0deg);
+  }
+}
+
+// copy pasted from styles.scss (the condition)
+@media(max-width: 310px){ 
+  #imgRobin{
+      width: 260px;
+      height: 260px;
+  }
+  .specifications tr > td {
+      min-width: 100px;
+      max-width: 100px;
+      word-break: break-all;
+  }
+  .caution,
+  .heavilyArmed {
+      text-align: center;
+  }
+}

@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ContainerComponent } from '@layout';
 import { THEMES, ThemeSwitcherService } from '@theming';
@@ -10,7 +10,11 @@ import { THEMES, ThemeSwitcherService } from '@theming';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   protected readonly themeSwitcher = inject(ThemeSwitcherService);
   protected readonly LIGHT_THEME = THEMES.LIGHT;
+
+  ngOnInit(): void {
+    window.top?.scrollTo();
+  }
 }

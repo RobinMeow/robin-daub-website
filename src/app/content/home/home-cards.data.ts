@@ -17,7 +17,7 @@ export const HOME_CARDS: HomeCard[] = [
   {
     subtitle: $localize`Hi, please allow me to introduce myself`,
     title: $localize`Resume`,
-    description: $localize`Detailed description about my occupations and career.`, // Detailierte Beschreibung meiner Tätigkeiten und meines Werdegangs
+    description: $localize`Detailed description about my occupations and career.`,
     imageSource: `assets/robin-in-2013.webp`,
     imageAlt: $localize`Robin in 2013`,
     matIconName: `history_edu`,
@@ -39,9 +39,9 @@ export const HOME_CARDS: HomeCard[] = [
   },
   // Wanted Poster
   {
-    subtitle: $localize`W A N T E D`,
-    title: ``,
-    description: ``,
+    subtitle: `? ? ?`,
+    title: `W A N T E D`,
+    description: `<i>~ take a look</i> <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>inside ~</i>`,
     imageSource: `assets/vintage-paper-question-mark.webp`,
     imageAlt: $localize`old parchment paper`,
     matIconName: `question_mark`,
@@ -49,16 +49,4 @@ export const HOME_CARDS: HomeCard[] = [
     routerLink: './wanted-poster',
     disabled: false,
   },
-  // Blogs
-  // {
-  //   subtitle:     $localize `'Soul Blog what?' you ask?`,
-  //   title:        $localize `Soul Blog`,
-  //   description:  $localize `Writin' about all sorts of stuff.`,
-  //   imageSource:  $localize `assets/coming-soon.webp`,
-  //   imageAlt:     $localize `under construction`,
-  //   matIconName:  $localize `newspaper`,
-  //   buttonText:   $localize `Check out soul blogs`,
-  //   routerLink: './Blogs',
-  //   disabled: true,
-  // },
 ];

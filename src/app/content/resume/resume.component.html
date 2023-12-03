@@ -1,0 +1,38 @@
+<!-- I just wanna mention a few games I played as little boy
+Im assuming early 2000 (maybe even earlier):
+First playe games
+- Snake on Nokia
+- Moorhuhn Editions
+- Full Tilt! Pinball as well!
+- Some lbyrinth/maze game which had a terrible POV. Cant find the name of the game tho. As far as I can remember it had no controls for moving, you just choose the direction. The closest I've found was Ken's Labyrinth, but that game looks too advanced for it.
+- After our dad bought a Joystick we had a bunch of different Piloting-Games.
+- We also had Road Rash (Back when EA made good games xD)
+This is what I call, an early gamer.  -->
+
+<div class="resume-container">
+  <div class="resume-data-container">
+    <div>
+      <h2><ng-container i18n>Resume</ng-container></h2>
+      <!-- <div>A software biographie focuses only on the IT relevant stuff.</div> -->
+    </div>
+    <mat-accordion *ngFor="let bio of resumeEntries">
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title [innerHTML]="bio.profession"></mat-panel-title>
+          <mat-panel-description>
+            <!-- <span>{{ bio.start }}{{ bio.end != null ? ' - ' : '' }}{{ bio.end }}</span><br> -->
+            <span
+              [innerHTML]="
+                bio.start +
+                (bio.end != null ? ' - ' + bio.end : '') +
+                '<br>' +
+                bio.location
+              "
+            ></span>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p [innerHTML]="bio.description"></p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+</div>

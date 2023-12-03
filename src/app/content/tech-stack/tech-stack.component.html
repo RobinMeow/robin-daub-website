@@ -1,0 +1,373 @@
+<div class="tech-stack-container">
+  <h2>Tech Stack</h2>
+
+  <div class="competence-container">
+    <mat-card class="competence-card">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title i18n>Beginner</mat-card-title>
+          <shared-star-rating [rating]="1" />
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-divider aria-hidden="true" />
+      <mat-card-content>
+        <ul>
+          <li>
+            <ng-container i18n
+              >starting out, learning basics/syntax</ng-container
+            >
+          </li>
+          <li>
+            <ng-container i18n
+              >first implementations with help of guides</ng-container
+            >
+          </li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="competence-card">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title i18n>Intermediate</mat-card-title>
+          <shared-star-rating [rating]="2" />
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-divider aria-hidden="true" />
+      <mat-card-content>
+        <ul>
+          <li>
+            <ng-container i18n>rarely needs to google for syntax</ng-container>
+          </li>
+          <li>
+            <ng-container i18n
+              >learning Best-Practises and discovering features the technology
+              has to offer</ng-container
+            >
+          </li>
+          <li>
+            <ng-container i18n
+              >halting work-flow due to going back and forth between googling
+              and implementing</ng-container
+            >
+          </li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="competence-card">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title i18n>Expert</mat-card-title>
+          <shared-star-rating [rating]="3" />
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-divider aria-hidden="true" />
+      <mat-card-content>
+        <ul>
+          <li>
+            <ng-container i18n
+              >knows most features the technology provides and how to use
+              them</ng-container
+            >
+          </li>
+          <li>
+            <ng-container i18n>fluent workflow</ng-container>
+          </li>
+          <li>
+            <ng-container i18n>easily adapts to new versions</ng-container>
+          </li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>C# 7.0</mat-panel-title>
+        <mat-panel-description i18n>Expert</mat-panel-description>
+        <mat-panel-description>
+          <shared-star-rating [rating]="3" />
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>
+        <ng-container i18n>
+          Collected practical expierience over 3 years in apprenticeship in
+          Console, ASP.NET and Windows Forms applications.
+        </ng-container>
+      </p>
+      <p>
+        <ng-container i18n
+          >1 year of self-taught expierience in Unity</ng-container
+        >
+      </p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>ASP.NET</mat-panel-title>
+        <mat-panel-description i18n>Expert</mat-panel-description>
+        <mat-panel-description>
+          <shared-star-rating [rating]="3" />
+        </mat-panel-description> </mat-expansion-panel-header
+      ><mat-panel-description
+        ><code>.Net Framework 4.5 &rarr; 4.8.1</code></mat-panel-description
+      >
+      <p>
+        <ng-container i18n
+          >Preferable I'd like to work with a more modern framework. (Angular,
+          Flutter, Qt, ..)</ng-container
+        >
+      </p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>HTML, CSS</mat-panel-title>
+        <mat-panel-description i18n>Expert</mat-panel-description>
+        <mat-panel-description>
+          <shared-star-rating [rating]="3" />
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>
+        <ng-container i18n>Several years of expierience.</ng-container>
+      </p>
+      <mat-panel-description i18n>
+        Trying to use more semantic html and take care of Accessibility and PWA,
+        while taking care of performace and keeping network round trips in mind.
+      </mat-panel-description>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>UML</mat-panel-title>
+        <mat-panel-description i18n>Expert</mat-panel-description>
+        <mat-panel-description>
+          <shared-star-rating [rating]="3" />
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <mat-panel-description>
+        <ng-container i18n>Using</ng-container>&nbsp;<a
+          target="_blank"
+          href="http://dia-installer.de/"
+          >Dia Diagram Editor</a
+        >
+      </mat-panel-description>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title i18n>Database</mat-panel-title>
+        <mat-panel-description i18n
+          >Intermediate - Expert</mat-panel-description
+        >
+        <mat-panel-description>
+          <shared-star-rating [rating]="3" />
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <mat-panel-description>
+        <code>
+          MSSQL | ADO.NET | linq2db | EF Core 7 | Entity-relationship Model |
+          <ng-container i18n>Relational notation</ng-container> | MongoDB |
+          Firestore | ...
+        </code>
+      </mat-panel-description>
+      <p>
+        <ng-container i18n
+          >Designing data structures and database schemas was a a large portion
+          of my apprenticeship.</ng-container
+        >
+      </p>
+      <mat-panel-description i18n>
+        No expierience with NoSql. But the terms: Document, Column-Family,
+        Graph, Key-Value are not strangers to me.
+      </mat-panel-description>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>IDEs</mat-panel-title>
+        <mat-panel-description i18n
+          >Intermediate - Expert</mat-panel-description
+        >
+        <mat-panel-description>
+          <shared-star-rating [rating]="2" />
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>
+        <code><pre>Visual Studio | VS Code | Rider</pre></code>
+      </p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Unity</mat-panel-title>
+        <mat-panel-description i18n>Intermediate</mat-panel-description>
+        <mat-panel-description>
+          <shared-star-rating [rating]="2" />
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>
+        <ng-container i18n
+          >Self-taught. About 1 year of expirience.</ng-container
+        >
+      </p>
+      <mat-panel-description i18n>
+        No intentions of going back to Game Development, except in my free time
+        (which is currently filled with Angular) and only in Unreal Engine,
+        unless there is a good reason to use Unity instead (like WebGL).
+      </mat-panel-description>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>TypeScript</mat-panel-title>
+        <mat-panel-description i18n>Intermediate</mat-panel-description>
+        <mat-panel-description>
+          <shared-star-rating [rating]="2" />
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>
+        <ng-container i18n>
+          Self-taught. Collecting practial experience while learning Angular.
+        </ng-container>
+      </p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Angular 15</mat-panel-title>
+        <mat-panel-description i18n>Intermediate</mat-panel-description>
+        <mat-panel-description>
+          <shared-star-rating [rating]="2" />
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>
+        <ng-container i18n>Self-taught. Currently learning.</ng-container>
+      </p>
+      <mat-panel-description i18n
+        >This homepage is developed in Angular and contains several topics like
+        components, directives, localization, theming, API,
+        BrowserAnimationModule, Accessibility and more.</mat-panel-description
+      >
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title i18n>Source Controls</mat-panel-title>
+        <mat-panel-description i18n>Intermediate</mat-panel-description>
+        <mat-panel-description>
+          <shared-star-rating [rating]="2" />
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>
+        <code>
+          <pre><ng-container>git | GitHub | TFS | Plastic SCM | Azure</ng-container></pre>
+        </code>
+      </p>
+
+      <mat-panel-description
+        >Clone, Commit, Ammend, Push, Fetch, Pull Request, Merge,
+        Rebase</mat-panel-description
+      >
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>C++</mat-panel-title>
+        <mat-panel-description i18n>Beginner</mat-panel-description>
+        <mat-panel-description>
+          <shared-star-rating [rating]="1" />
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>
+        <ng-container i18n>
+          Self-taught. I've read and understood the
+          <a href="https://cplusplus.com/doc/tutorial/" target="_blank"
+            >C++11 Language Tutorial</a
+          >
+          while looking into
+          <a
+            href="https://isocpp.org/wiki/faq/const-correctness"
+            target="_blank"
+            >Const Correctness</a
+          >
+          but besides doing a little bit in Unreal Engine, I have not collected
+          much practical experience.
+        </ng-container>
+        <mat-panel-description i18n
+          >This is by far my&nbsp;<strong>favorite programming language</strong
+          >&nbsp;due to it being so close to the underlaying
+          system.</mat-panel-description
+        >
+      </p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Linux</mat-panel-title>
+        <mat-panel-description i18n>Beginner</mat-panel-description>
+        <mat-panel-description>
+          <shared-star-rating [rating]="1" />
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <mat-panel-description i18n
+        >Would like to make the jump from Windows to Linux for my working
+        station, but I'm still perfectly fine with
+        Windows.</mat-panel-description
+      >
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Docker</mat-panel-title>
+        <mat-panel-description i18n>Beginner</mat-panel-description>
+        <mat-panel-description>
+          <shared-star-rating [rating]="1" />
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>
+        <ng-container i18n
+          >Collected expirience is visible in this GitHub repository
+          <a
+            href="https://github.com/RobinMeow/Gemeinschaftskochbuch"
+            target="_blank"
+            >Gemeinschaftskochbuch</a
+          >. It contains an ASP.NET Core API (containerized for production) as
+          well as a MongoDB container (for development).</ng-container
+        >
+      </p>
+    </mat-expansion-panel>
+
+    <!-- <mat-expansion-panel>
+          <mat-expansion-panel-header>
+              <mat-panel-title>Python</mat-panel-title>
+              <mat-panel-description i18n>Beginner</mat-panel-description>
+              <mat-panel-description>
+                  <shared-star-rating [rating]="0" />
+              </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>
+              <ng-container i18n>Self taught the basic syntax to help out a friend :)</ng-container>
+          </p>
+      </mat-expansion-panel> -->
+
+    <!-- <mat-expansion-panel>
+          <mat-expansion-panel-header>
+              <mat-panel-title>
+                  <ng-container>Firebase</ng-container>
+              </mat-panel-title>
+              <mat-panel-description>
+                  <ng-container i18n>Beginner</ng-container>
+              </mat-panel-description>
+              <mat-panel-description>
+                  <shared-star-rating [rating]="0" />
+              </mat-panel-description>
+          </mat-expansion-panel-header>
+          <ng-container>Required an easy and a free solution, to host this Homepage.</ng-container>
+      </mat-expansion-panel> -->
+  </mat-accordion>
+
+  <!-- ToDo: Soft Skils Clean Code / Design Patterns / Refactoring / TDD  -->
+</div>

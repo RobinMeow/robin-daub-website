@@ -22,19 +22,21 @@ export const routes: Routes = [
   //   title: $localize`Blogs` + TITLE_SUFFIX,
   // },
 
-  // {
-  //   path: 'wanted-poster',
-  //   loadComponent: () =>
-  //     import('src/app/content/home/wanted-poster/wanted-poster.component'),
-  //   title: $localize`Wanted Poster` + TITLE_SUFFIX,
-  //   pathMatch: 'full',
-  // },
+  {
+    path: 'wanted-poster',
+    loadComponent: async () =>
+      (await import('src/app/content/wanted-poster/wanted-poster.component'))
+        .WantedPosterComponent,
+    title: $localize`Wanted Poster` + TITLE_SUFFIX,
+    pathMatch: 'full',
+  },
 
-  // {
-  //   path: 'resume',
-  //   loadComponent: () => import('src/app/content/home/resume/resume.component'),
-  //   title: $localize`Resume` + TITLE_SUFFIX,
-  // },
+  {
+    path: 'resume',
+    loadComponent: async () =>
+      (await import('src/app/content/resume/resume.component')).ResumeComponent,
+    title: $localize`Resume` + TITLE_SUFFIX,
+  },
 
   {
     path: 'software-biography',
@@ -47,14 +49,13 @@ export const routes: Routes = [
     title: $localize`Software Biography` + TITLE_SUFFIX,
   },
 
-  // {
-  //   path: 'tech-stack',
-  //   loadComponent: () =>
-  //     import('src/app/content/home/tech-stack/tech-stack.component').then(
-  //       (c) => c.TechStackComponent,
-  //     ),
-  //   title: $localize`Tech-Stack` + TITLE_SUFFIX,
-  // },
+  {
+    path: 'tech-stack',
+    loadComponent: async () =>
+      (await import('src/app/content/tech-stack/tech-stack.component'))
+        .TechStackComponent,
+    title: $localize`Tech-Stack` + TITLE_SUFFIX,
+  },
 
   {
     path: 'credits',

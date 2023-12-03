@@ -1,0 +1,277 @@
+<div class="set-min-height">
+  <div class="background">
+    <img
+      priority
+      ngSrc="assets/old-parchment-paper-1334-2000.webp"
+      class="darken"
+      fill
+      alt="old parchment paper background"
+      i18n-alt
+    />
+    <div class="wanted-poster">
+      <div class="heading">
+        <h1 class="wanted-heading">
+          <shared-typed
+            [name]="'wantedHeading'"
+            [startOnComplete]="deadOrAlive"
+            [typeSpeed]="150"
+            [startDelay]="500"
+          >
+            <span><ng-container i18n>W A N T E D</ng-container></span>
+          </shared-typed>
+        </h1>
+
+        <h2>
+          <!-- todo: typed dead or delete and rewrite striked -->
+          <shared-typed
+            #deadOrAlive
+            [name]="'deadOrAlive'"
+            [startOnComplete]="wantedFor"
+            [backSpeed]="175"
+          >
+            <span typed><ng-container i18n>DEAD or</ng-container> </span>
+            <!-- the nbsp is important, because since the localization was added, the white space is for some reason discarded. The once between alive and !!! are not discarded.. I replaced the regardless.. -->
+            <span typed
+              ><s class="striked-dead-or"
+                ><ng-container i18n>DEAD or</ng-container></s
+              >&nbsp;<ng-container i18n>ALIVE</ng-container>&nbsp;!1!</span
+            >
+            <span typed
+              ><s class="striked-dead-or"
+                ><ng-container i18n>DEAD or</ng-container></s
+              >&nbsp;<ng-container i18n>ALIVE</ng-container>&nbsp;!!!</span
+            >
+          </shared-typed>
+        </h2>
+
+        <p class="wantedFor">
+          <shared-typed
+            #wantedFor
+            [name]="'wantedFor'"
+            [startOnComplete]="wantedName"
+            [backSpeed]="175"
+          >
+            <span typed
+              ><ng-container i18n
+                >FOR WRITING MAINTAINABLE SOFTWARE</ng-container
+              ></span
+            >
+          </shared-typed>
+        </p>
+
+        <!-- ToDo: let the image blink 3 times, when typewriter is done with heading -->
+        <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
+        <img
+          id="imgRobin"
+          priority
+          ngSrc="assets/robin-sketched-bordered.webp"
+          width="500"
+          height="500"
+          i18n-alt
+          alt="sketch of Robin on wanted poster in old west style"
+        />
+
+        <h2>
+          <shared-typed
+            #wantedName
+            [name]="'wantedName'"
+            [startOnComplete]="wantedMiddleName"
+          >
+            <span typed>Robin Daubensch&uuml;tz</span>
+          </shared-typed>
+        </h2>
+
+        <br />
+
+        <table class="specifications">
+          <tr>
+            <td>
+              <shared-typed
+                #wantedMiddleName
+                [name]="'wantedMiddleName'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedMiddleNameValue"
+              >
+                <span><ng-container i18n>Middle name</ng-container>:</span>
+              </shared-typed>
+            </td>
+            <td>
+              <shared-typed
+                #wantedMiddleNameValue
+                [name]="'wantedMiddleNameValue'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedCodename"
+              >
+                <span>Josua</span>
+              </shared-typed>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <shared-typed
+                #wantedCodename
+                [name]="'wantedCodename'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedCodenameValue"
+              >
+                <span>Also known as:</span>
+              </shared-typed>
+            </td>
+            <td>
+              <shared-typed
+                #wantedCodenameValue
+                [name]="'wantedCodenameValue'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedHaircolor"
+              >
+                <span>Ribyn</span>
+              </shared-typed>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <shared-typed
+                #wantedHaircolor
+                [name]="'wantedHaircolor'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedHaircolorValue"
+              >
+                <span><ng-container i18n>Hair color</ng-container>:</span>
+              </shared-typed>
+            </td>
+            <td>
+              <shared-typed
+                #wantedHaircolorValue
+                [name]="'wantedHaircolorValue'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedEyecolor"
+              >
+                <span><ng-container i18n>dark blond</ng-container></span>
+              </shared-typed>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <shared-typed
+                #wantedEyecolor
+                [name]="'wantedEyecolor'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedEyecolorValue"
+              >
+                <span><ng-container i18n>Eye color</ng-container>:</span>
+              </shared-typed>
+            </td>
+            <td>
+              <shared-typed
+                #wantedEyecolorValue
+                [name]="'wantedEyecolorValue'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedProfession"
+              >
+                <span><ng-container i18n>blue-green</ng-container></span>
+              </shared-typed>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <shared-typed
+                #wantedProfession
+                [name]="'wantedProfession'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedProfessionValue"
+              >
+                <span><ng-container i18n>Profession</ng-container>:</span>
+              </shared-typed>
+            </td>
+            <td>
+              <shared-typed
+                #wantedProfessionValue
+                [name]="'wantedProfessionValue'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedResidence"
+              >
+                <span><ng-container i18n>Programming</ng-container></span>
+              </shared-typed>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <shared-typed
+                #wantedResidence
+                [name]="'wantedResidence'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedResidenceValue"
+              >
+                <span
+                  ><ng-container i18n>Residence / Whereabouts</ng-container
+                  >:</span
+                >
+              </shared-typed>
+            </td>
+            <td>
+              <shared-typed
+                #wantedResidenceValue
+                [name]="'wantedResidenceValue'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedPassion"
+              >
+                <span style="min-width: 300px; max-width: 300px"
+                  ><ng-container i18n>probably in</ng-container
+                  >&nbsp;Schwabenland</span
+                >
+              </shared-typed>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <shared-typed
+                #wantedPassion
+                [name]="'wantedPassion'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedPassionValue"
+              >
+                <span><ng-container i18n>Passion</ng-container>:</span>
+              </shared-typed>
+            </td>
+            <td>
+              <shared-typed
+                #wantedPassionValue
+                [name]="'wantedPassionValue'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedCaution"
+              >
+                <span><ng-container i18n>Christianity</ng-container></span>
+              </shared-typed>
+            </td>
+          </tr>
+        </table>
+
+        <p class="caution">
+          <shared-typed
+            #wantedCaution
+            [name]="'wantedCaution'"
+            [startOnComplete]="wantedArmed"
+          >
+            <span
+              ><strong><ng-container i18n>CAUTION</ng-container>!</strong>^1000
+              <ng-container i18n>APPROACH WITH KINDNESS</ng-container></span
+            >
+          </shared-typed>
+        </p>
+        <p class="heavilyArmed">
+          <shared-typed #wantedArmed [name]="'wantedArmed'" [startDelay]="700">
+            <span
+              ><strong
+                ><ng-container i18n
+                  >HEAVILY ARMED WITH BLESSINGS</ng-container
+                ></strong
+              ></span
+            >
+          </shared-typed>
+        </p>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+  </div>
+</div>
