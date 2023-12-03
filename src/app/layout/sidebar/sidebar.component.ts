@@ -3,7 +3,6 @@ import {
   ElementRef,
   Input,
   OnInit,
-  Signal,
   ViewChild,
   WritableSignal,
   inject,
