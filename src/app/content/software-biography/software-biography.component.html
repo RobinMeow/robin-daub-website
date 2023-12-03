@@ -16,7 +16,7 @@
 <!-- make a mouse tail because I can  -->
 <div class="software-engineering-container">
   <h1 @fadeInTitle>
-    <code><ng-container i18n>Software Biography</ng-container></code>
+    <code i18n>Software Biography</code>
   </h1>
   <div aria-hidden="true" class="spacer"></div>
 
@@ -28,7 +28,7 @@
             >To put it quite bluntly: as long as there were no machines,
             programming was no problem at all.</ng-container
           >
-          <mat-divider aria-hidden="true"></mat-divider>
+          <mat-divider aria-hidden="true" />
           <mat-card-subtitle><i>Edger W Dijkstra</i></mat-card-subtitle>
         </mat-card-content>
       </mat-card>
@@ -46,7 +46,7 @@
             >A programmer doesn't get into that level of thought process for the
             first 10, 15 years</ng-container
           >
-          <mat-divider aria-hidden="true"></mat-divider>
+          <mat-divider aria-hidden="true" />
           <mat-card-subtitle
             ><i
               >Robert C. Martin in
@@ -58,21 +58,21 @@
       <!-- <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
                 <mat-card-content>
                     01010010 01101111 01100010 01101001 01101110
-                    <mat-divider aria-hidden="true"></mat-divider>
+                    <mat-divider aria-hidden="true" />
                     <mat-card-subtitle><i>Text converted to Binary with ASCII</i></mat-card-subtitle>
                 </mat-card-content>
             </mat-card> -->
       <!-- <mat-card class="quote-box">
                 <mat-card-content>
                     <ng-container i18n>A City is Not a Tree</ng-container>
-                    <mat-divider aria-hidden="true"></mat-divider>
+                    <mat-divider aria-hidden="true" />
                     <mat-card-subtitle><i>Christopher Alexander</i></mat-card-subtitle>
                 </mat-card-content>
             </mat-card> -->
     </div>
 
     <div class="info-box" appPlayRandomizedFadeInAnimateWhenInViewport>
-      <mat-divider aria-hidden="true"></mat-divider>
+      <mat-divider aria-hidden="true" />
       <h2><ng-container i18n>How it started</ng-container></h2>
       <p>
         <ng-container i18n
@@ -116,7 +116,7 @@
 
         <!-- <ng-container i18n>By searching for 'best-practises' I often found comments on Stack Overflow containing quotes from <a href="https://martinfowler.com/" target="_blank">Martin Fowler</a>, Eric Evans and <a href="https://en.wikipedia.org/wiki/Robert_C._Martin" target="_blank">Uncle Bob</a></ng-container> -->
       </p>
-      <mat-divider aria-hidden="true"></mat-divider>
+      <mat-divider aria-hidden="true" />
     </div>
 
     <div class="middle-flexbox">
@@ -126,7 +126,7 @@
             >The heart of software is its ability to solve domain-related
             problems for its user.</ng-container
           >
-          <mat-divider aria-hidden="true"></mat-divider>
+          <mat-divider aria-hidden="true" />
           <mat-card-subtitle><i>Eric Evans</i></mat-card-subtitle>
         </mat-card-content>
       </mat-card>
@@ -144,15 +144,15 @@
           <ng-container i18n
             >Any program is only as good as it is useful.</ng-container
           >
-          <mat-divider aria-hidden="true"></mat-divider>
+          <mat-divider aria-hidden="true" />
           <mat-card-subtitle><i>Linus Torvalds</i></mat-card-subtitle>
         </mat-card-content>
       </mat-card>
     </div>
 
     <div class="info-box" appPlayRandomizedFadeInAnimateWhenInViewport>
-      <mat-divider aria-hidden="true"></mat-divider>
-      <h2><ng-container i18n>Continuation</ng-container></h2>
+      <mat-divider aria-hidden="true" />
+      <h2 i18n>Continuation</h2>
       <p>
         <ng-container i18n
           >Reading books like
@@ -191,7 +191,7 @@
           creativity.</ng-container
         >
       </p>
-      <mat-divider aria-hidden="true"></mat-divider>
+      <mat-divider aria-hidden="true" />
     </div>
 
     <div class="middle-flexbox">
@@ -202,7 +202,7 @@
             first and count the cost, whether he has enough to finish
             it--</ng-container
           >
-          <mat-divider aria-hidden="true"></mat-divider>
+          <mat-divider aria-hidden="true" />
           <mat-card-subtitle>
             <i><ng-container i18n>Luke 14:28 (NKJV)</ng-container></i>
           </mat-card-subtitle>
@@ -245,20 +245,15 @@
     </div>
 
     <div class="info-box" appPlayRandomizedFadeInAnimateWhenInViewport>
-      <mat-divider aria-hidden="true"></mat-divider>
+      <mat-divider aria-hidden="true" />
       <!-- , goto; conference, Unreal Fest -->
-      <h2><ng-container i18n>Today</ng-container></h2>
-      <p>
-        <ng-container i18n
-          >I like to watch talks on YouTube, like DDDEurope, NDC Conferences,
-          GDC and many more.</ng-container
-        ><br />
-        <ng-container i18n
-          >But mostly I learn by practising and reading on the
-          internet.</ng-container
-        >&nbsp;:)
+      <h2 i18n>Today</h2>
+      <p i18n>
+        I like to watch talks on YouTube, like DDDEurope, NDC Conferences, GDC
+        and many more.<br />
+        But mostly I learn by practising and reading on the internet.&nbsp;:)
       </p>
-      <mat-divider aria-hidden="true"></mat-divider>
+      <mat-divider aria-hidden="true" />
     </div>
 
     <div class="middle-flexbox">
@@ -280,7 +275,7 @@
         <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
           <mat-card-content>
             Pattern Language
-            <mat-divider aria-hidden="true"></mat-divider>
+            <mat-divider aria-hidden="true" />
             <mat-card-subtitle><i>Christopher Alexander</i></mat-card-subtitle>
           </mat-card-content>
         </mat-card>
@@ -289,7 +284,7 @@
       <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
         <mat-card-content>
           SOLID Principles
-          <mat-divider aria-hidden="true"></mat-divider>
+          <mat-divider aria-hidden="true" />
           <mat-card-subtitle><i>Uncle Bob</i></mat-card-subtitle>
         </mat-card-content>
       </mat-card>
@@ -302,25 +297,19 @@
     </div>
 
     <div class="info-box" appPlayRandomizedFadeInAnimateWhenInViewport>
-      <mat-divider aria-hidden="true"></mat-divider>
-      <h2>
-        <ng-container i18n>My first "programmer" experience</ng-container>
-      </h2>
-      <p>
-        <ng-container i18n
-          >I was around eleven y/o, playing
-          <a
-            href="https://en.wikipedia.org/wiki/LittleBigPlanet_2"
-            target="_blank"
-            >Little Big Planet 2&nbsp;<icon-open-in-new /></a
-          >.</ng-container
-        ><br />
-        <ng-container i18n
-          >It contained a Level-Editor to create your own content, by combining
-          Logic Gates with Physics, Sounds, Light and much more.</ng-container
-        >
+      <mat-divider aria-hidden="true" />
+      <h2 i18n>My first "programming" experience</h2>
+      <p i18n>
+        I was around eleven y/o, playing
+        <a
+          href="https://en.wikipedia.org/wiki/LittleBigPlanet_2"
+          target="_blank"
+          >Little Big Planet 2&nbsp;<icon-open-in-new /></a
+        >.<br />
+        It contained a Level-Editor to create your own content, by combining
+        Logic Gates with Physics, Sounds, Light and much more.
       </p>
-      <mat-divider aria-hidden="true"></mat-divider>
+      <mat-divider aria-hidden="true" />
     </div>
 
     <div class="middle-flexbox">
@@ -330,7 +319,7 @@
             >Code is like humor. When you have to explain it, it's
             bad.</ng-container
           >
-          <mat-divider aria-hidden="true"></mat-divider>
+          <mat-divider aria-hidden="true" />
           <mat-card-subtitle><i>Cory House</i></mat-card-subtitle>
         </mat-card-content>
       </mat-card>
@@ -347,25 +336,21 @@
         matTooltip="Object Oriented Programming"
         appPlayRandomizedFadeInAnimateWhenInViewport
       >
-        <mat-card-content>
-          <ng-container>OOP</ng-container>
-        </mat-card-content>
+        <mat-card-content>OOP</mat-card-content>
       </mat-card>
     </div>
 
     <div class="info-box" appPlayRandomizedFadeInAnimateWhenInViewport>
-      <mat-divider aria-hidden="true"></mat-divider>
-      <p>
-        <ng-container i18n
-          ><a
-            href="https://www.youtube.com/playlist?list=PL6wxfKvkNqRugfIiKKgRXa_0wKIQW_ZEH"
-            target="_blank"
-            >Kevlin Henney<icon-open-in-new
-          /></a>
-          is my favorite speaker.</ng-container
-        >
+      <mat-divider aria-hidden="true" />
+      <p i18n>
+        <a
+          href="https://www.youtube.com/playlist?list=PL6wxfKvkNqRugfIiKKgRXa_0wKIQW_ZEH"
+          target="_blank"
+          >Kevlin Henney<icon-open-in-new
+        /></a>
+        is my favorite speaker.
       </p>
-      <mat-divider aria-hidden="true"></mat-divider>
+      <mat-divider aria-hidden="true" />
     </div>
 
     <div class="middle-flexbox">
@@ -432,18 +417,15 @@
     </div>
 
     <div class="info-box" appPlayRandomizedFadeInAnimateWhenInViewport>
-      <mat-divider aria-hidden="true"></mat-divider>
-      <h2><ng-container i18n>In future</ng-container></h2>
-      <p>
-        <ng-container i18n
-          >I would love to learn more about Multithreaded and Parallel
-          programming as well as Networking.</ng-container
-        ><br /><ng-container i18n
-          >Furthermore I would like to bring my C++ and Linux expertise up to my
-          C# expertise.</ng-container
-        >
+      <mat-divider aria-hidden="true" />
+      <h2 i18n>In future</h2>
+      <p i18n>
+        I would love to learn more about Multithreaded and Parallel programming
+        as well as Networking.<br />
+        Furthermore I would like to bring my C++ and Linux expertise up to my C#
+        expertise.
       </p>
-      <mat-divider aria-hidden="true"></mat-divider>
+      <mat-divider aria-hidden="true" />
     </div>
 
     <div class="middle-flexbox">
@@ -453,7 +435,7 @@
             >Clean code always looks like it was written by someone who
             cares.</ng-container
           >
-          <mat-divider aria-hidden="true"></mat-divider>
+          <mat-divider aria-hidden="true" />
           <mat-card-subtitle><i>Michael Feathers</i></mat-card-subtitle>
         </mat-card-content>
       </mat-card>
@@ -463,7 +445,7 @@
           <ng-container i18n
             >Beauty is born of and found in simplicity.</ng-container
           >
-          <mat-divider aria-hidden="true"></mat-divider>
+          <mat-divider aria-hidden="true" />
           <mat-card-subtitle>
             <i>Kevlin Henney, 97 Things Every Programmer Should Know</i>
           </mat-card-subtitle>
@@ -475,7 +457,7 @@
 
     <div class="middle-flexbox">
       <div class="info-box" appPlayRandomizedFadeInAnimateWhenInViewport>
-        <mat-divider aria-hidden="true"></mat-divider>
+        <mat-divider aria-hidden="true" />
         <h2>
           <ng-container i18n>Thanks for reading</ng-container>&nbsp;<mat-icon
             area-hidden="false"
@@ -487,7 +469,7 @@
         <!-- <p>
                     <ng-container i18n>Thank you for taking a course through a piece of my mind regarding Software Architecture, Clean Code, Design Patterns, Refactoring and other things I've curiously stumbled upon over the years.</ng-container>
                 </p> -->
-        <mat-divider aria-hidden="true"></mat-divider>
+        <mat-divider aria-hidden="true" />
       </div>
     </div>
   </div>
