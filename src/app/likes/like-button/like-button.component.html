@@ -1,7 +1,6 @@
 <button
   mat-icon-button
   class="favorite-icon red-color"
-  i18n-aria-label
   aria-label="like button"
   (click)="onClickAsync()"
 >
@@ -17,7 +16,6 @@
   }
   <mat-icon
     area-hidden="false"
-    i18n-aria-label
     aria-label="favorite icon"
     fontIcon="favorite"
     [@singleHeartBeat]="heartState"

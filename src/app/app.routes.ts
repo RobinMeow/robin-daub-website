@@ -8,7 +8,7 @@ export const routes: Routes = [
     path: 'about',
     loadComponent: async () =>
       (await import('src/app/content/about/about.component')).AboutComponent,
-    title: $localize`About me` + TITLE_SUFFIX,
+    title: `About me` + TITLE_SUFFIX,
   },
   {
     path: 'aboutme',
@@ -19,7 +19,7 @@ export const routes: Routes = [
   // {
   //   path: 'blogs',
   //   loadComponent: () => import('src/app/content/blogs/blogs.component'),
-  //   title: $localize`Blogs` + TITLE_SUFFIX,
+  //   title: `Blogs` + TITLE_SUFFIX,
   // },
 
   {
@@ -27,7 +27,7 @@ export const routes: Routes = [
     loadComponent: async () =>
       (await import('src/app/content/wanted-poster/wanted-poster.component'))
         .WantedPosterComponent,
-    title: $localize`Wanted Poster` + TITLE_SUFFIX,
+    title: `Wanted Poster` + TITLE_SUFFIX,
     pathMatch: 'full',
   },
 
@@ -35,7 +35,7 @@ export const routes: Routes = [
     path: 'resume',
     loadComponent: async () =>
       (await import('src/app/content/resume/resume.component')).ResumeComponent,
-    title: $localize`Resume` + TITLE_SUFFIX,
+    title: `Resume` + TITLE_SUFFIX,
   },
 
   {
@@ -46,7 +46,7 @@ export const routes: Routes = [
           'src/app/content/software-biography/software-biography.component'
         )
       ).SoftwareBiographyComponent,
-    title: $localize`Software Biography` + TITLE_SUFFIX,
+    title: `Software Biography` + TITLE_SUFFIX,
   },
 
   {
@@ -54,7 +54,7 @@ export const routes: Routes = [
     loadComponent: async () =>
       (await import('src/app/content/tech-stack/tech-stack.component'))
         .TechStackComponent,
-    title: $localize`Tech-Stack` + TITLE_SUFFIX,
+    title: `Tech-Stack` + TITLE_SUFFIX,
   },
 
   {
@@ -62,7 +62,7 @@ export const routes: Routes = [
     loadComponent: async () =>
       (await import('src/app/content/credits/credits.component'))
         .CreditsComponent,
-    title: $localize`Credits` + TITLE_SUFFIX,
+    title: `Credits` + TITLE_SUFFIX,
   },
   {
     path: 'lorbeeren',

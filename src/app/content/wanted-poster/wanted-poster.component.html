@@ -6,7 +6,6 @@
       class="darken"
       fill
       alt="old parchment paper background"
-      i18n-alt
     />
     <div class="wanted-poster">
       <div class="heading">
@@ -17,7 +16,7 @@
             [typeSpeed]="150"
             [startDelay]="500"
           >
-            <span><ng-container i18n>W A N T E D</ng-container></span>
+            <span>W A N T E D</span>
           </shared-typed>
         </h1>
 
@@ -29,17 +28,13 @@
             [startOnComplete]="wantedFor"
             [backSpeed]="175"
           >
-            <span typed><ng-container i18n>DEAD or</ng-container> </span>
+            <span typed>DEAD or </span>
             <!-- the nbsp is important, because since the localization was added, the white space is for some reason discarded. The once between alive and !!! are not discarded.. I replaced the regardless.. -->
             <span typed
-              ><s class="striked-dead-or"
-                ><ng-container i18n>DEAD or</ng-container></s
-              >&nbsp;<ng-container i18n>ALIVE</ng-container>&nbsp;!1!</span
+              ><s class="striked-dead-or">DEAD or</s>&nbsp;ALIVE&nbsp;!1!</span
             >
             <span typed
-              ><s class="striked-dead-or"
-                ><ng-container i18n>DEAD or</ng-container></s
-              >&nbsp;<ng-container i18n>ALIVE</ng-container>&nbsp;!!!</span
+              ><s class="striked-dead-or">DEAD or</s>&nbsp;ALIVE&nbsp;!!!</span
             >
           </shared-typed>
         </h2>
@@ -51,11 +46,7 @@
             [startOnComplete]="wantedName"
             [backSpeed]="175"
           >
-            <span typed
-              ><ng-container i18n
-                >FOR WRITING MAINTAINABLE SOFTWARE</ng-container
-              ></span
-            >
+            <span typed>FOR WRITING MAINTAINABLE SOFTWARE</span>
           </shared-typed>
         </p>
 
@@ -67,7 +58,6 @@
           ngSrc="assets/robin-sketched-bordered.webp"
           width="500"
           height="500"
-          i18n-alt
           alt="sketch of Robin on wanted poster in old west style"
         />
 
@@ -92,7 +82,7 @@
                 [startDelay]="startDelaySpec"
                 [startOnComplete]="wantedMiddleNameValue"
               >
-                <span><ng-container i18n>Middle name</ng-container>:</span>
+                <span>Middle name:</span>
               </shared-typed>
             </td>
             <td>
@@ -136,7 +126,7 @@
                 [startDelay]="startDelaySpec"
                 [startOnComplete]="wantedHaircolorValue"
               >
-                <span><ng-container i18n>Hair color</ng-container>:</span>
+                <span>Hair color:</span>
               </shared-typed>
             </td>
             <td>
@@ -146,7 +136,7 @@
                 [startDelay]="startDelaySpec"
                 [startOnComplete]="wantedEyecolor"
               >
-                <span><ng-container i18n>dark blond</ng-container></span>
+                <span>dark blond</span>
               </shared-typed>
             </td>
           </tr>
@@ -158,7 +148,7 @@
                 [startDelay]="startDelaySpec"
                 [startOnComplete]="wantedEyecolorValue"
               >
-                <span><ng-container i18n>Eye color</ng-container>:</span>
+                <span>Eye color:</span>
               </shared-typed>
             </td>
             <td>
@@ -168,7 +158,7 @@
                 [startDelay]="startDelaySpec"
                 [startOnComplete]="wantedProfession"
               >
-                <span><ng-container i18n>blue-green</ng-container></span>
+                <span>blue-green</span>
               </shared-typed>
             </td>
           </tr>
@@ -180,7 +170,7 @@
                 [startDelay]="startDelaySpec"
                 [startOnComplete]="wantedProfessionValue"
               >
-                <span><ng-container i18n>Profession</ng-container>:</span>
+                <span>Profession:</span>
               </shared-typed>
             </td>
             <td>
@@ -190,7 +180,7 @@
                 [startDelay]="startDelaySpec"
                 [startOnComplete]="wantedResidence"
               >
-                <span><ng-container i18n>Programming</ng-container></span>
+                <span>Programming</span>
               </shared-typed>
             </td>
           </tr>
@@ -202,10 +192,7 @@
                 [startDelay]="startDelaySpec"
                 [startOnComplete]="wantedResidenceValue"
               >
-                <span
-                  ><ng-container i18n>Residence / Whereabouts</ng-container
-                  >:</span
-                >
+                <span>Residence / Whereabouts:</span>
               </shared-typed>
             </td>
             <td>
@@ -216,8 +203,7 @@
                 [startOnComplete]="wantedPassion"
               >
                 <span style="min-width: 300px; max-width: 300px"
-                  ><ng-container i18n>probably in</ng-container
-                  >&nbsp;Schwabenland</span
+                  >probably in&nbsp;Schwabenland</span
                 >
               </shared-typed>
             </td>
@@ -230,7 +216,7 @@
                 [startDelay]="startDelaySpec"
                 [startOnComplete]="wantedPassionValue"
               >
-                <span><ng-container i18n>Passion</ng-container>:</span>
+                <span>Passion:</span>
               </shared-typed>
             </td>
             <td>
@@ -240,7 +226,7 @@
                 [startDelay]="startDelaySpec"
                 [startOnComplete]="wantedCaution"
               >
-                <span><ng-container i18n>Christianity</ng-container></span>
+                <span>Christianity</span>
               </shared-typed>
             </td>
           </tr>
@@ -252,21 +238,12 @@
             [name]="'wantedCaution'"
             [startOnComplete]="wantedArmed"
           >
-            <span
-              ><strong><ng-container i18n>CAUTION</ng-container>!</strong>^1000
-              <ng-container i18n>APPROACH WITH KINDNESS</ng-container></span
-            >
+            <span><strong>CAUTION!</strong>^1000 APPROACH WITH KINDNESS</span>
           </shared-typed>
         </p>
         <p class="heavilyArmed">
           <shared-typed #wantedArmed [name]="'wantedArmed'" [startDelay]="700">
-            <span
-              ><strong
-                ><ng-container i18n
-                  >HEAVILY ARMED WITH BLESSINGS</ng-container
-                ></strong
-              ></span
-            >
+            <span><strong>HEAVILY ARMED WITH BLESSINGS</strong></span>
           </shared-typed>
         </p>
       </div>
