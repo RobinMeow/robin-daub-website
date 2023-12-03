@@ -1,0 +1,39 @@
+.header {
+	position: sticky;
+	top: 0px;
+	z-index: 10;
+	
+	// ToDo: Transparence on scroll
+}
+
+.spacer {
+	flex: 1 1 auto;
+}
+
+.cursorPointer{
+	cursor: pointer;
+}
+
+#imgLogo{
+	margin-right: 10px;
+}
+
+@media(max-width: 600px){
+	.hide-title-text {
+		display: none;
+	}
+}
+
+@media(max-width: 400px)
+{
+	.hide-title-text-completely {
+		display: none;
+	}
+}
+
+@media(max-width: 310px)
+{
+	.hide-logo {
+		display: none;
+	}
+}

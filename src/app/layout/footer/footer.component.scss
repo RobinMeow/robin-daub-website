@@ -1,0 +1,10 @@
+.example-spacer {
+	flex: 1 1 auto;
+}
+
+// override angulars defaults
+.mat-toolbar {
+	font-size: 12px; // override 
+	font-weight: unset; // override 
+	flex-wrap: wrap; // added 
+}

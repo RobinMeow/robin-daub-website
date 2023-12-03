@@ -13,10 +13,21 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "de": {
+            "translation": "src/locales/messages.de.json",
+            "baseHref": "/de/"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "localize": false,
+            "aot": true,
             "outputPath": "dist/robin-daub-website",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -27,15 +38,22 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest",
+              "src/robots.txt"
             ],
             "styles": [
+              "src/theme-variables.scss",
+              "src/theme.scss",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "i18nDuplicateTranslation": "error",
+            "i18nMissingTranslation": "error"
           },
           "configurations": {
             "production": {
+              "localize": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -48,12 +66,41 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "serviceWorker": "ngsw-config.json"
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
+            },
+            "en-US": {
+              "localize": [
+                "en-US"
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.en-US.ts"
+                }
+              ]
+            },
+            "de": {
+              "localize": [
+                "de"
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.de.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -66,6 +113,12 @@
             },
             "development": {
               "buildTarget": "robin-daub-website:build:development"
+            },
+            "de": {
+              "buildTarget": "RobinsHomepage:build:development,de"
+            },
+            "en-US": {
+              "buildTarget": "RobinsHomepage:build:development,en-US"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +126,8 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "robin-daub-website:build"
+            "buildTarget": "robin-daub-website:build",
+            "outputPath": "src/locales"
           }
         },
         "test": {
@@ -87,15 +141,27 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest",
+              "src/robots.txt"
             ],
             "styles": [
               "src/styles.scss"
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2,
+            "browserTarget": "robin-daub-website:build:production"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

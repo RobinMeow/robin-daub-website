@@ -23,6 +23,7 @@ yarn-error.log
 # Visual Studio Code
 .vscode/*
 !.vscode/settings.json
+!.vscode/setting.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
@@ -40,3 +41,20 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Sensetive data
+/src/environments/environment.de.ts
+/src/environments/environment.en-US.ts
+/src/environments/environment.ts
+
+# Firebase
+.idea
+**/node_modules/*
+**/.firebaserc
+.runtimeconfig.json
+.firebase/
+**/firestore.indexes.json
+**/firestore.rules
+**/firebase-debug.log
+**/firestore-debug.log
+**/ui-debug.log
