@@ -28,7 +28,7 @@
       (click)="closeSidenav()"
     >
       <mat-icon fontIcon="home" matListItemIcon />
-      <div matListItemTitle><ng-container i18n>Home</ng-container></div>
+      <div matListItemTitle i18n>Home</div>
     </mat-list-item>
 
     <mat-list-item
@@ -39,7 +39,7 @@
       (click)="closeSidenav()"
     >
       <mat-icon fontIcon="badge" matListItemIcon />
-      <div matListItemTitle><ng-container i18n>About me</ng-container></div>
+      <div matListItemTitle i18n>About me</div>
     </mat-list-item>
     <!-- routerLink, iconName, text, routerLinkExactMatch -->
     <mat-divider aria-hidden="true" />
@@ -53,7 +53,7 @@
       (click)="closeSidenav()"
     >
       <mat-icon fontIcon="analytics" matListItemIcon />
-      <div matListItemTitle><ng-container i18n>Tech Stack</ng-container></div>
+      <div matListItemTitle i18n>Tech Stack</div>
     </mat-list-item>
 
     <!-- Resume -->
@@ -65,7 +65,7 @@
       (click)="closeSidenav()"
     >
       <mat-icon fontIcon="history_edu" matListItemIcon />
-      <div matListItemTitle><ng-container i18n>Resume</ng-container></div>
+      <div matListItemTitle i18n>Resume</div>
     </mat-list-item>
 
     <!-- Software Biography -->
@@ -77,9 +77,7 @@
       (click)="closeSidenav()"
     >
       <mat-icon fontIcon="code" matListItemIcon />
-      <div matListItemTitle>
-        <ng-container i18n>Software Biography</ng-container>
-      </div>
+      <div matListItemTitle i18n>Software Biography</div>
     </mat-list-item>
 
     <!-- ./blogs -->
@@ -113,13 +111,9 @@
       [disabled]="isLoadingCat()"
     >
       <mat-icon matListItemIcon>pets</mat-icon>
-      <div matListItemTitle>
-        <ng-container i18n>Give me a cat!</ng-container>
-      </div>
+      <div matListItemTitle i18n>Give me a cat!</div>
       <div matListItemLine>
-        <i>
-          <ng-container i18n>Can include gifs</ng-container>
-        </i>
+        <i i18n>Can include gifs</i>
       </div>
     </mat-list-item>
 
