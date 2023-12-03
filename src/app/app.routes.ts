@@ -36,14 +36,16 @@ export const routes: Routes = [
   //   title: $localize`Resume` + TITLE_SUFFIX,
   // },
 
-  // {
-  //   path: 'software-engineering',
-  //   loadComponent: () =>
-  //     import(
-  //       'src/app/content/software-biography/software-biography.component'
-  //     ).then((c) => c.SoftwareBiographyComponent),
-  //   title: $localize`Software Biography` + TITLE_SUFFIX,
-  // },
+  {
+    path: 'software-biography',
+    loadComponent: async () =>
+      (
+        await import(
+          'src/app/content/software-biography/software-biography.component'
+        )
+      ).SoftwareBiographyComponent,
+    title: $localize`Software Biography` + TITLE_SUFFIX,
+  },
 
   // {
   //   path: 'tech-stack',
@@ -54,19 +56,18 @@ export const routes: Routes = [
   //   title: $localize`Tech-Stack` + TITLE_SUFFIX,
   // },
 
-  // {
-  //   path: 'credits',
-  //   loadComponent: () =>
-  //     import('src/app/content/credits/credits.component').then(
-  //       (c) => c.CreditsComponent,
-  //     ),
-  //   title: $localize`Credits` + TITLE_SUFFIX,
-  // },
-  // {
-  //   path: 'lorbeeren',
-  //   redirectTo: 'credits',
-  //   pathMatch: 'full',
-  // },
+  {
+    path: 'credits',
+    loadComponent: async () =>
+      (await import('src/app/content/credits/credits.component'))
+        .CreditsComponent,
+    title: $localize`Credits` + TITLE_SUFFIX,
+  },
+  {
+    path: 'lorbeeren',
+    redirectTo: 'credits',
+    pathMatch: 'full',
+  },
 
   // {
   //   path: '',

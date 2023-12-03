@@ -6,7 +6,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
-  selector: 'app-about',
+  selector: 'content-about',
   standalone: true,
   imports: [
     CommonModule,
