@@ -1,0 +1,53 @@
+<div class="aboutme-container">
+  <h2>About me</h2>
+
+  <mat-card>
+    <mat-card-content class="two-column-layout">
+      <div>
+        <mat-card-title>Hi, I'm Robin!</mat-card-title>
+        <p>
+          I like to develop software, meet up with friends, family and
+          community, <br />
+          read books, bible-study, cooking, listen to music and further
+          education.
+        </p>
+        <p>
+          You can refer to my
+          <a matTooltipPosition="above" matTooltip="Work in progress">
+            <s>Books-Page</s>
+          </a>
+          if you wanna know more about the books I like to read.
+        </p>
+
+        <mat-divider class="margin-top"></mat-divider>
+
+        <div>
+          <h3>Contact</h3>
+          <p>E-Mail: robindaubenschuetz&#64;gmail.com</p>
+          <p>
+            Robin Daubenschütz <br />
+            Haputstr. 14a<br />
+            73312 Geislingen an der Steige
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <img
+          ngSrc="assets/MeMyselfAnd.webp"
+          width="300"
+          height="392"
+          priority
+        />
+      </div>
+    </mat-card-content>
+    <mat-card-footer aria-hidden="true">
+      <mat-progress-bar
+        color="accent"
+        mode="determinate"
+        value="100"
+        aria-hidden="true"
+      ></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card>
+</div>

@@ -1,0 +1,124 @@
+$stonehenge-image-width: 919px;
+
+.software-engineering-container {
+	max-width: $stonehenge-image-width;
+	display: block;
+	margin: 0 auto;
+	padding: 0.5em;
+	overflow: hidden; // make sure, an animation coming from outside the viewport (on the X axis), is not blending in a X scroll bar 
+}
+
+h1 {
+	text-align: center;
+	font-size: 4em;
+
+	@media(max-width: 600px) {
+		font-size: 2.5em;
+	}
+}
+
+h2 {
+	text-align: center;
+	font-weight: 500;
+	text-shadow: 0px 0px 1px white;
+}
+
+.spacer {
+	height: 2em;
+}
+
+#imgStonehenge,
+.image-shadow,
+.image-shadow-top {
+	// scale down when needed, but never beyond max 
+	max-width: 100%;
+	height: auto;
+
+	// centering 
+	display: block;
+	margin: 0 auto;
+}
+
+.image-shadow,
+.image-shadow-top {
+	// shadow needs to be smaller in width, because the image is transparent on the sides. 
+	// this is also why the box shadow is seperated, so we can change the width and height without hacving the image affected. (it is intended, that the sides have no shadow) 
+	max-width: calc($stonehenge-image-width - 69px); // max width is 919 
+}
+
+.image-shadow {
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow: 0px -10px 20px 15px black;
+}
+
+.image-shadow-top {
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow: 0px 5px 20px 15px black;
+	margin-top: 0.5em;
+}
+
+.flexbox {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	gap: 2em;
+	margin-bottom: 2em;
+}
+
+.term-box,
+.quote-box {
+	max-width: 320px;
+
+	mat-divider {
+		margin: 0.5em 0em;
+	}
+
+	&:hover {
+		transform: scale(1.15) !important; // will get rid of the rotation as well. Not exactly what I wanted, but sort of fine..
+	}
+}
+
+.term-box {
+	align-self: flex-start;
+}
+
+.quote-box {
+	align-self: flex-end;
+}
+
+.info-box {
+	// make sure, its covers full width
+	min-width: calc(100% - 1em);
+	max-width: calc(100% - 1em); // madBadge is taking extra width, and kills responsive layout and adds a vertical scrollbar, when screen width is not broad enough
+
+	align-self: center;
+
+	p {
+		text-align: center;
+		margin: 0.75em;
+	}
+}
+
+.mat-badge-padding-fix {
+	padding-bottom: 16px;
+
+	// madBadge is taking extra width, and kills responsive layout and adds a vertical scrollbar, when screen width is not broad enough
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+.middle-flexbox {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1.5em 0.75em;
+	justify-content: space-around;
+}
+
+.term-collection {
+	max-width: 320px;
+}
+
+.term-collection-big {
+	max-width: unset;
+}

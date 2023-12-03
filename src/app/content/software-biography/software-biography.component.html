@@ -1,0 +1,449 @@
+<!-- Stongehenge -->
+<div @fadeInStonehenge>
+  <div aria-hidden="true" class="image-shadow-top"></div>
+  <img
+    id="imgStonehenge"
+    alt="an image of stonehenge"
+    width="919"
+    height="300"
+    ngSrc="assets/stonehenge.webp"
+    priority
+  />
+  <div aria-hidden="true" class="image-shadow"></div>
+</div>
+
+<!-- make a mouse tail because I can  -->
+<div class="software-engineering-container">
+  <h1 @fadeInTitle>
+    <code>Software Biography</code>
+  </h1>
+  <div aria-hidden="true" class="spacer"></div>
+
+  <div class="flexbox">
+    <div class="middle-flexbox">
+      <mat-card class="quote-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+        <mat-card-content>
+          <ng-container
+            >To put it quite bluntly: as long as there were no machines,
+            programming was no problem at all.</ng-container
+          >
+          <mat-divider aria-hidden="true" />
+          <mat-card-subtitle><i>Edger W Dijkstra</i></mat-card-subtitle>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card
+        class="quote-box mat-badge-padding-fix"
+        matBadge="?"
+        appPlayRandomizedFadeInAnimateWhenInViewport
+        matTooltip="for me: after six months of apprenticeship"
+        matTooltipPosition="above"
+      >
+        <mat-card-content>
+          A programmer doesn't get into that level of thought process for the
+          first 10, 15 years
+          <mat-divider aria-hidden="true" />
+          <mat-card-subtitle
+            ><i
+              >Robert C. Martin in
+              <a href="https://youtu.be/QnmRpHFoYLk?t=902" target="_blank"
+                >GOTO Book Club 2021&nbsp;<icon-open-in-new /></a></i
+          ></mat-card-subtitle>
+        </mat-card-content>
+      </mat-card>
+      <!-- <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+                <mat-card-content>
+                    01010010 01101111 01100010 01101001 01101110
+                    <mat-divider aria-hidden="true" />
+                    <mat-card-subtitle><i>Text converted to Binary with ASCII</i></mat-card-subtitle>
+                </mat-card-content>
+            </mat-card> -->
+      <!-- <mat-card class="quote-box">
+                <mat-card-content>
+                    <ng-container>A City is Not a Tree</ng-container>
+                    <mat-divider aria-hidden="true" />
+                    <mat-card-subtitle><i>Christopher Alexander</i></mat-card-subtitle>
+                </mat-card-content>
+            </mat-card> -->
+    </div>
+
+    <div class="info-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+      <mat-divider aria-hidden="true" />
+      <h2>How it started</h2>
+      <p>
+        At the beginning of my apprenticeship I often found comments on Stack
+        Overflow containing quotes from
+        <a href="https://martinfowler.com/" target="_blank"
+          >Martin Fowler&nbsp;<icon-open-in-new /></a
+        >, Eric Evans or
+        <a href="https://en.wikipedia.org/wiki/Robert_C._Martin" target="_blank"
+          >Uncle Bob&nbsp;<icon-open-in-new /></a
+        >.<br />
+        This is how I came to read my very first english technical book
+        <i
+          class="accent-highlight"
+          matTooltip="Patterns of Enterprise Software Applications (Martin Fowler, 2002)"
+          matTooltipPosition="above"
+          >PoEAA</i
+        >.<br />
+        This was in August 2021. Followed up by
+        <i
+          class="accent-highlight"
+          matTooltip="Domain-Driven Design: Tackling Complexity in the Heart of Software (Eric Evans, 2002)"
+          matTooltipPosition="above"
+          >DDD</i
+        >
+        in Oktober and
+        <i
+          class="accent-highlight"
+          matTooltip="Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides, 1994"
+          matTooltipPosition="above"
+          >Design Patterns</i
+        >
+        in November.
+        <!-- <ng-container i18n>By searching for 'best-practises' I often found comments on Stack Overflow containing quotes from <a href="https://martinfowler.com/" target="_blank">Martin Fowler</a>, Eric Evans and <a href="https://en.wikipedia.org/wiki/Robert_C._Martin" target="_blank">Uncle Bob</a></ng-container> -->
+      </p>
+      <mat-divider aria-hidden="true" />
+    </div>
+
+    <div class="middle-flexbox">
+      <mat-card class="quote-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+        <mat-card-content>
+          The heart of software is its ability to solve domain-related problems
+          for its user.
+          <mat-divider aria-hidden="true" />
+          <mat-card-subtitle><i>Eric Evans</i></mat-card-subtitle>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+        <mat-card-content>
+          <a href="https://agilemanifesto.org/" target="_blank"
+            >Agile Software Development&nbsp;<icon-open-in-new
+          /></a>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="quote-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+        <mat-card-content>
+          Any program is only as good as it is useful.
+          <mat-divider aria-hidden="true" />
+          <mat-card-subtitle><i>Linus Torvalds</i></mat-card-subtitle>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="info-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+      <mat-divider aria-hidden="true" />
+      <h2>Continuation</h2>
+      <p>
+        Reading books like
+        <i
+          matTooltip="Stephen R. Covey, 1989"
+          class="accent-highlight"
+          matTooltipPosition="above"
+          >The 7 Habits of Highly Effective People</i
+        >,
+        <i
+          >The Bible (<span
+            class="accent-highlight"
+            matTooltip="Hoffnung f&uuml;r alle"
+            matTooltipPosition="above"
+            >HFA</span
+          >)</i
+        >
+        and
+        <i
+          class="accent-highlight"
+          matTooltip="A True Story of Turning Followers into Leaders (L. David Marquet, 2013)"
+          matTooltipPosition="above"
+          >Turn the Ship Around!</i
+        >
+        invaluable shaped me as a person.<br />
+        <!-- in growing on a Dependent, Independent and a Interdependent level -->
+        It helps to keep the
+        <span
+          class="accent-highlight"
+          matTooltip="Or should I say, pointed velocity?"
+          matTooltipPosition="above"
+          >right direction over time</span
+        >, understand your sourroundings better and boosts creativity.
+      </p>
+      <mat-divider aria-hidden="true" />
+    </div>
+
+    <div class="middle-flexbox">
+      <mat-card class="quote-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+        <mat-card-content>
+          For which of you, intending to build a tower, does not sit down first
+          and count the cost, whether he has enough to finish it--
+          <mat-divider aria-hidden="true" />
+          <mat-card-subtitle>
+            <i>Luke 14:28 (NKJV)</i>
+          </mat-card-subtitle>
+        </mat-card-content>
+      </mat-card>
+
+      <div class="middle-flexbox term-collection">
+        <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+          <mat-card-content
+            matTooltip="You ain't gonna need it"
+            matTooltipPosition="above"
+          >
+            YAGNI
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+          <mat-card-content
+            matTooltip="Keep it simple stupid"
+            matTooltipPosition="above"
+          >
+            KISS
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+          <mat-card-content
+            matTooltip="Don't repeat yourself"
+            matTooltipPosition="above"
+          >
+            DRY
+          </mat-card-content>
+        </mat-card>
+        <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+          <mat-card-content>
+            <a href="https://refactoring.com/" target="_blank"
+              >Refactoring&nbsp;<icon-open-in-new
+            /></a>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+
+    <div class="info-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+      <mat-divider aria-hidden="true" />
+      <!-- , goto; conference, Unreal Fest -->
+      <h2>Today</h2>
+      <p>
+        I like to watch talks on YouTube, like DDDEurope, NDC Conferences, GDC
+        and many more.<br />
+        But mostly I learn by practising and reading on the internet.&nbsp;:)
+      </p>
+      <mat-divider aria-hidden="true" />
+    </div>
+
+    <div class="middle-flexbox">
+      <div class="middle-flexbox term-collection">
+        <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+          <mat-card-content>
+            <a
+              href="https://refactoring.guru/design-patterns/catalog"
+              target="_blank"
+              >The Catalog of Design Patterns&nbsp;<icon-open-in-new
+            /></a>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+          <mat-card-content> Gang of Four </mat-card-content>
+        </mat-card>
+
+        <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+          <mat-card-content>
+            Pattern Language
+            <mat-divider aria-hidden="true" />
+            <mat-card-subtitle><i>Christopher Alexander</i></mat-card-subtitle>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+        <mat-card-content>
+          SOLID Principles
+          <mat-divider aria-hidden="true" />
+          <mat-card-subtitle><i>Uncle Bob</i></mat-card-subtitle>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+        <mat-card-content matTooltip="Test Driven Development">
+          TDD
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="info-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+      <mat-divider aria-hidden="true" />
+      <h2>My first "programming" experience</h2>
+      <p>
+        I was around eleven y/o, playing
+        <a
+          href="https://en.wikipedia.org/wiki/LittleBigPlanet_2"
+          target="_blank"
+          >Little Big Planet 2&nbsp;<icon-open-in-new /></a
+        >.<br />
+        It contained a Level-Editor to create your own content, by combining
+        Logic Gates with Physics, Sounds, Light and much more.
+      </p>
+      <mat-divider aria-hidden="true" />
+    </div>
+
+    <div class="middle-flexbox">
+      <mat-card class="quote-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+        <mat-card-content>
+          Code is like humor. When you have to explain it, it's bad.
+          <mat-divider aria-hidden="true" />
+          <mat-card-subtitle><i>Cory House</i></mat-card-subtitle>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+        <mat-card-content>
+          Domain-, Behavior- and Model Driven Design
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card
+        class="term-box"
+        matTooltip="Object Oriented Programming"
+        appPlayRandomizedFadeInAnimateWhenInViewport
+      >
+        <mat-card-content>OOP</mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="info-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+      <mat-divider aria-hidden="true" />
+      <p>
+        <a
+          href="https://www.youtube.com/playlist?list=PL6wxfKvkNqRugfIiKKgRXa_0wKIQW_ZEH"
+          target="_blank"
+          >Kevlin Henney<icon-open-in-new
+        /></a>
+        is my favorite speaker.
+      </p>
+      <mat-divider aria-hidden="true" />
+    </div>
+
+    <div class="middle-flexbox">
+      <div class="middle-flexbox term-collection-big">
+        <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+          <mat-card-content> Layered Architecture </mat-card-content>
+        </mat-card>
+
+        <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+          <mat-card-content matTooltip="Service Oriented Architecture">
+            SOA
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+          <mat-card-content> Event Driven Architecture </mat-card-content>
+        </mat-card>
+
+        <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+          <mat-card-content> Event Sourcing </mat-card-content>
+        </mat-card>
+
+        <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+          <mat-card-content
+            matTooltip="Command and Query Responsibility Segregation"
+            matTooltipPosition="above"
+          >
+            CQRS
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card class="term-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+          <mat-card-content>
+            <a
+              href="https://github.com/Sairyss/domain-driven-hexagon"
+              target="_blank"
+              >Domain Driven Hexagon&nbsp;<icon-open-in-new
+            /></a>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card
+          class="term-box mat-badge-padding-fix"
+          appPlayRandomizedFadeInAnimateWhenInViewport
+          matBadge="?"
+          matTooltip="What is this doing here?"
+          matTooltipPosition="above"
+        >
+          <mat-card-content>
+            <a href="http://www.laputan.org/mud/" target="_blank"
+              >Big Ball of Mud&nbsp;<icon-open-in-new
+            /></a>
+            <mat-divider></mat-divider>
+            <mat-card-subtitle
+              ><a
+                href="https://www.infoq.com/news/2010/09/big-ball-of-mud/"
+                target="_blank"
+                >Still the Most Popular Software Design&nbsp;<icon-open-in-new /></a
+            ></mat-card-subtitle>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+
+    <div class="info-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+      <mat-divider aria-hidden="true" />
+      <h2>In future</h2>
+      <p>
+        I would love to learn more about Multithreaded and Parallel programming
+        as well as Networking.<br />
+        Furthermore I would like to bring my C++ and Linux expertise up to my C#
+        expertise.
+      </p>
+      <mat-divider aria-hidden="true" />
+    </div>
+
+    <div class="middle-flexbox">
+      <mat-card class="quote-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+        <mat-card-content>
+          Clean code always looks like it was written by someone who cares.
+          <mat-divider aria-hidden="true" />
+          <mat-card-subtitle><i>Michael Feathers</i></mat-card-subtitle>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="quote-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+        <mat-card-content>
+          Beauty is born of and found in simplicity.
+          <mat-divider aria-hidden="true" />
+          <mat-card-subtitle>
+            <i>Kevlin Henney, 97 Things Every Programmer Should Know</i>
+          </mat-card-subtitle>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <!-- END -->
+
+    <div class="middle-flexbox">
+      <div class="info-box" appPlayRandomizedFadeInAnimateWhenInViewport>
+        <mat-divider aria-hidden="true" />
+        <h2>
+          <ng-container>Thanks for reading</ng-container>&nbsp;<mat-icon
+            area-hidden="false"
+            aria-label="Heart Icon"
+            fontIcon="favorite"
+          ></mat-icon>
+        </h2>
+        <!-- <p>
+                    <ng-container i18n>Thank you for taking a course through a piece of my mind regarding Software Architecture, Clean Code, Design Patterns, Refactoring and other things I've curiously stumbled upon over the years.</ng-container>
+                </p> -->
+        <mat-divider aria-hidden="true" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- browser aniomation staggering  -->
+
+<!--
+I want to point out, that working in Game Development seemed like working with old-fashioned people. <br>
+e.g. <a href="https://www.youtube.com/watch?v=raQ3iHhE_Kk">Unite 2017 talk by by Ryan Hipple</a> is a highly praised among the Unity Community. <br>
+It is a really nice talk, it helped me out as well. But when he was talking and explaining the Pattern for `Game Events`, I immediatly thought of `Domain Events`.
+Unity was released 2005, <a href="https://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/">Udi Dahans blog post</a> was released 2008 (which was the third version the same year).
+This is just one of many examples I've stumbled across, which made me feel like, Game Developement is behind in Web Development. -->

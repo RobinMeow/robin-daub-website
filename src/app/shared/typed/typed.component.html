@@ -1,0 +1,9 @@
+<!-- ng-content will have all spans or a single one -->
+<span [id]="getTypedStringId">
+  <ng-content />
+  <!-- the default if only one string -->
+  <ng-content select="[typed]" />
+</span>
+
+<!-- this span will be used by typed.js to animate the typing. -->
+<span [id]="getTypeWriteId"></span>

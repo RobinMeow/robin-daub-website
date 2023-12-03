@@ -3,18 +3,8 @@
   <div>
     <div class="sidebar-header">
       <!-- todo: add randomized emojies on toggle -->
-      <button
-        mat-icon-button
-        i18n-aria-label
-        aria-label="close menu"
-        (click)="drawer.toggle()"
-      >
-        <mat-icon
-          area-hidden="false"
-          i18n-aria-label
-          aria-label="close"
-          fontIcon="close"
-        />
+      <button mat-icon-button aria-label="close menu" (click)="drawer.toggle()">
+        <mat-icon area-hidden="false" aria-label="close" fontIcon="close" />
       </button>
     </div>
 
@@ -28,7 +18,7 @@
       (click)="closeSidenav()"
     >
       <mat-icon fontIcon="home" matListItemIcon />
-      <div matListItemTitle><ng-container i18n>Home</ng-container></div>
+      <div matListItemTitle>Home</div>
     </mat-list-item>
 
     <mat-list-item
@@ -39,7 +29,7 @@
       (click)="closeSidenav()"
     >
       <mat-icon fontIcon="badge" matListItemIcon />
-      <div matListItemTitle><ng-container i18n>About me</ng-container></div>
+      <div matListItemTitle>About me</div>
     </mat-list-item>
     <!-- routerLink, iconName, text, routerLinkExactMatch -->
     <mat-divider aria-hidden="true" />
@@ -53,7 +43,7 @@
       (click)="closeSidenav()"
     >
       <mat-icon fontIcon="analytics" matListItemIcon />
-      <div matListItemTitle><ng-container i18n>Tech Stack</ng-container></div>
+      <div matListItemTitle>Tech Stack</div>
     </mat-list-item>
 
     <!-- Resume -->
@@ -65,21 +55,19 @@
       (click)="closeSidenav()"
     >
       <mat-icon fontIcon="history_edu" matListItemIcon />
-      <div matListItemTitle><ng-container i18n>Resume</ng-container></div>
+      <div matListItemTitle>Resume</div>
     </mat-list-item>
 
     <!-- Software Biography -->
     <mat-list-item
       matRipple
-      routerLink="/software-engineering"
+      routerLink="/software-biography"
       class="sidebarButton"
       routerLinkActive="activeSidebarButton"
       (click)="closeSidenav()"
     >
       <mat-icon fontIcon="code" matListItemIcon />
-      <div matListItemTitle>
-        <ng-container i18n>Software Biography</ng-container>
-      </div>
+      <div matListItemTitle>Software Biography</div>
     </mat-list-item>
 
     <!-- ./blogs -->
@@ -93,7 +81,6 @@
   <div>
     <img
       #catImg
-      i18n-alt
       alt="a random cat"
       width="200"
       height="200"
@@ -113,13 +100,9 @@
       [disabled]="isLoadingCat()"
     >
       <mat-icon matListItemIcon>pets</mat-icon>
-      <div matListItemTitle>
-        <ng-container i18n>Give me a cat!</ng-container>
-      </div>
+      <div matListItemTitle>Give me a cat!</div>
       <div matListItemLine>
-        <i>
-          <ng-container i18n>Can include gifs</ng-container>
-        </i>
+        <i>Can include gifs</i>
       </div>
     </mat-list-item>
 
@@ -131,10 +114,8 @@
       (click)="closeSidenav()"
     >
       <app-mat-symbol-eco matListItemIcon></app-mat-symbol-eco>
-      <div matListItemTitle><ng-container i18n>Laurels</ng-container></div>
-      <span
-        ><i><ng-container i18n>Credits</ng-container></i></span
-      >
+      <div matListItemTitle>Laurels</div>
+      <span><i>Credits</i></span>
     </mat-list-item>
   </div>
 </mat-list>

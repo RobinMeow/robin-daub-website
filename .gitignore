@@ -43,8 +43,6 @@ testem.log
 Thumbs.db
 
 # Sensetive data
-/src/environments/environment.de.ts
-/src/environments/environment.en-US.ts
 /src/environments/environment.ts
 
 # Firebase

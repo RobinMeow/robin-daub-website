@@ -1,0 +1,27 @@
+.card {
+  width: 340px;
+  max-width: 340px;
+  padding: 10px;
+}
+
+.card-image {
+  // display: block;
+  margin: 1em auto 0.5em auto;
+  border-radius: var(--mdc-elevated-card-container-shape, var(--mdc-shape-medium, 4px)); // literally just copied the values from the Browser F12 Tab ..
+}
+
+.mdc-card__actions {
+  flex-direction: row-reverse; // override - default is row 
+}
+
+.read-bio-button {
+  margin: 0 auto 0.5em auto;
+  width: 262px; // use exact Image width
+}
+
+@media(max-width: 400px) {
+  .card {
+      max-width: 298px; 
+      padding: 5px;
+  }
+}

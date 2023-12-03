@@ -1,0 +1,254 @@
+<div class="set-min-height">
+  <div class="background">
+    <img
+      priority
+      ngSrc="assets/old-parchment-paper-1334-2000.webp"
+      class="darken"
+      fill
+      alt="old parchment paper background"
+    />
+    <div class="wanted-poster">
+      <div class="heading">
+        <h1 class="wanted-heading">
+          <shared-typed
+            [name]="'wantedHeading'"
+            [startOnComplete]="deadOrAlive"
+            [typeSpeed]="150"
+            [startDelay]="500"
+          >
+            <span>W A N T E D</span>
+          </shared-typed>
+        </h1>
+
+        <h2>
+          <!-- todo: typed dead or delete and rewrite striked -->
+          <shared-typed
+            #deadOrAlive
+            [name]="'deadOrAlive'"
+            [startOnComplete]="wantedFor"
+            [backSpeed]="175"
+          >
+            <span typed>DEAD or </span>
+            <!-- the nbsp is important, because since the localization was added, the white space is for some reason discarded. The once between alive and !!! are not discarded.. I replaced the regardless.. -->
+            <span typed
+              ><s class="striked-dead-or">DEAD or</s>&nbsp;ALIVE&nbsp;!1!</span
+            >
+            <span typed
+              ><s class="striked-dead-or">DEAD or</s>&nbsp;ALIVE&nbsp;!!!</span
+            >
+          </shared-typed>
+        </h2>
+
+        <p class="wantedFor">
+          <shared-typed
+            #wantedFor
+            [name]="'wantedFor'"
+            [startOnComplete]="wantedName"
+            [backSpeed]="175"
+          >
+            <span typed>FOR WRITING MAINTAINABLE SOFTWARE</span>
+          </shared-typed>
+        </p>
+
+        <!-- ToDo: let the image blink 3 times, when typewriter is done with heading -->
+        <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images -->
+        <img
+          id="imgRobin"
+          priority
+          ngSrc="assets/robin-sketched-bordered.webp"
+          width="500"
+          height="500"
+          alt="sketch of Robin on wanted poster in old west style"
+        />
+
+        <h2>
+          <shared-typed
+            #wantedName
+            [name]="'wantedName'"
+            [startOnComplete]="wantedMiddleName"
+          >
+            <span typed>Robin Daubensch&uuml;tz</span>
+          </shared-typed>
+        </h2>
+
+        <br />
+
+        <table class="specifications">
+          <tr>
+            <td>
+              <shared-typed
+                #wantedMiddleName
+                [name]="'wantedMiddleName'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedMiddleNameValue"
+              >
+                <span>Middle name:</span>
+              </shared-typed>
+            </td>
+            <td>
+              <shared-typed
+                #wantedMiddleNameValue
+                [name]="'wantedMiddleNameValue'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedCodename"
+              >
+                <span>Josua</span>
+              </shared-typed>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <shared-typed
+                #wantedCodename
+                [name]="'wantedCodename'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedCodenameValue"
+              >
+                <span>Also known as:</span>
+              </shared-typed>
+            </td>
+            <td>
+              <shared-typed
+                #wantedCodenameValue
+                [name]="'wantedCodenameValue'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedHaircolor"
+              >
+                <span>Ribyn</span>
+              </shared-typed>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <shared-typed
+                #wantedHaircolor
+                [name]="'wantedHaircolor'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedHaircolorValue"
+              >
+                <span>Hair color:</span>
+              </shared-typed>
+            </td>
+            <td>
+              <shared-typed
+                #wantedHaircolorValue
+                [name]="'wantedHaircolorValue'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedEyecolor"
+              >
+                <span>dark blond</span>
+              </shared-typed>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <shared-typed
+                #wantedEyecolor
+                [name]="'wantedEyecolor'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedEyecolorValue"
+              >
+                <span>Eye color:</span>
+              </shared-typed>
+            </td>
+            <td>
+              <shared-typed
+                #wantedEyecolorValue
+                [name]="'wantedEyecolorValue'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedProfession"
+              >
+                <span>blue-green</span>
+              </shared-typed>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <shared-typed
+                #wantedProfession
+                [name]="'wantedProfession'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedProfessionValue"
+              >
+                <span>Profession:</span>
+              </shared-typed>
+            </td>
+            <td>
+              <shared-typed
+                #wantedProfessionValue
+                [name]="'wantedProfessionValue'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedResidence"
+              >
+                <span>Programming</span>
+              </shared-typed>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <shared-typed
+                #wantedResidence
+                [name]="'wantedResidence'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedResidenceValue"
+              >
+                <span>Residence / Whereabouts:</span>
+              </shared-typed>
+            </td>
+            <td>
+              <shared-typed
+                #wantedResidenceValue
+                [name]="'wantedResidenceValue'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedPassion"
+              >
+                <span style="min-width: 300px; max-width: 300px"
+                  >probably in&nbsp;Schwabenland</span
+                >
+              </shared-typed>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <shared-typed
+                #wantedPassion
+                [name]="'wantedPassion'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedPassionValue"
+              >
+                <span>Passion:</span>
+              </shared-typed>
+            </td>
+            <td>
+              <shared-typed
+                #wantedPassionValue
+                [name]="'wantedPassionValue'"
+                [startDelay]="startDelaySpec"
+                [startOnComplete]="wantedCaution"
+              >
+                <span>Christianity</span>
+              </shared-typed>
+            </td>
+          </tr>
+        </table>
+
+        <p class="caution">
+          <shared-typed
+            #wantedCaution
+            [name]="'wantedCaution'"
+            [startOnComplete]="wantedArmed"
+          >
+            <span><strong>CAUTION!</strong>^1000 APPROACH WITH KINDNESS</span>
+          </shared-typed>
+        </p>
+        <p class="heavilyArmed">
+          <shared-typed #wantedArmed [name]="'wantedArmed'" [startDelay]="700">
+            <span><strong>HEAVILY ARMED WITH BLESSINGS</strong></span>
+          </shared-typed>
+        </p>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+  </div>
+</div>

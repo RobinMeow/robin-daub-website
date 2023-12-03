@@ -1,17 +1,11 @@
 <mat-toolbar color="primary" role="banner" class="header">
   <button
     mat-icon-button
-    i18n-aria-label
     aria-label="menu icon"
     (click)="drawer.toggle()"
     [hidden]="drawer.opened"
   >
-    <mat-icon
-      area-hidden="false"
-      i18n-aria-label
-      aria-label="menu"
-      fontIcon="menu"
-    />
+    <mat-icon area-hidden="false" aria-label="menu" fontIcon="menu" />
   </button>
 
   <img
@@ -23,33 +17,35 @@
     height="32"
     routerLink="./home"
     alt="Website Logo"
-    i18n-alt
   />
 
   <!-- ToDo: James Bond reference for references -->
   <h3 class="cursorPointer hide-title-text-completely" routerLink="'./home'">
-    <span class="hide-title-text"
-      ><ng-container i18n>The name's</ng-container></span
-    >
+    <span class="hide-title-text">The name's</span>
     Robin
   </h3>
 
   <span class="spacer"></span>
 
-  <locale-locale-selection />
+  <a
+    mat-icon-button
+    aria-label="view GitHub profile"
+    href="https://github.com/RobinMeow"
+    target="_blank"
+  >
+    <icon-git-hub-icon />
+  </a>
 
   <likes-like-button />
 
   <button
     mat-icon-button
-    i18n-aria-label
     aria-label="theme icon"
     (click)="toggleTheme(btnThemeIcon)"
   >
     <mat-icon
       #btnThemeIcon
       area-hidden="false"
-      i18n-aria-label
       aria-label="menu"
       fontIcon="light_mode"
     ></mat-icon>

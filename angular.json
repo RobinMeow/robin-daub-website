@@ -13,22 +13,11 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
-      "i18n": {
-        "sourceLocale": "en-US",
-        "locales": {
-          "de": {
-            "translation": "src/locales/messages.de.json",
-            "baseHref": "/de/"
-          }
-        }
-      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "localize": false,
-            "aot": true,
-            "outputPath": "dist/robin-daub-website",
+            "outputPath": "dist",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -47,13 +36,10 @@
               "src/theme.scss",
               "src/styles.scss"
             ],
-            "scripts": [],
-            "i18nDuplicateTranslation": "error",
-            "i18nMissingTranslation": "error"
+            "scripts": []
           },
           "configurations": {
             "production": {
-              "localize": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -66,7 +52,6 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all",
               "serviceWorker": "ngsw-config.json"
             },
             "development": {
@@ -77,28 +62,6 @@
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.development.ts"
-                }
-              ]
-            },
-            "en-US": {
-              "localize": [
-                "en-US"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.en-US.ts"
-                }
-              ]
-            },
-            "de": {
-              "localize": [
-                "de"
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.de.ts"
                 }
               ]
             }
@@ -113,22 +76,9 @@
             },
             "development": {
               "buildTarget": "robin-daub-website:build:development"
-            },
-            "de": {
-              "buildTarget": "RobinsHomepage:build:development,de"
-            },
-            "en-US": {
-              "buildTarget": "RobinsHomepage:build:development,en-US"
             }
           },
           "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "buildTarget": "robin-daub-website:build",
-            "outputPath": "src/locales"
-          }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
@@ -149,13 +99,6 @@
               "src/styles.scss"
             ],
             "scripts": []
-          }
-        },
-        "deploy": {
-          "builder": "@angular/fire:deploy",
-          "options": {
-            "version": 2,
-            "browserTarget": "robin-daub-website:build:production"
           }
         }
       }
