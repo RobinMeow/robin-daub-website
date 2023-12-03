@@ -16,11 +16,22 @@ export const routes: Routes = [
     pathMatch: 'full',
   },
 
-  // {
-  //   path: 'blogs',
-  //   loadComponent: () => import('src/app/content/blogs/blogs.component'),
-  //   title: `Blogs` + TITLE_SUFFIX,
-  // },
+  {
+    path: 'cookbook',
+    loadComponent: async () =>
+      (await import('src/app/content/cookbook/cookbook.component'))
+        .CookbookComponent,
+    title: `Cookbook` + TITLE_SUFFIX,
+    pathMatch: 'full',
+  },
+
+  {
+    path: 'books',
+    loadComponent: async () =>
+      (await import('src/app/content/books/books.component')).BooksComponent,
+    title: `Books` + TITLE_SUFFIX,
+    pathMatch: 'full',
+  },
 
   {
     path: 'wanted-poster',

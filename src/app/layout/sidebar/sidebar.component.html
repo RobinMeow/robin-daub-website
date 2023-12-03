@@ -70,11 +70,30 @@
       <div matListItemTitle>Software Biography</div>
     </mat-list-item>
 
-    <!-- ./blogs -->
-    <!-- <mat-list-item matRipple class="sidebarButton" [routerLinkActive]="'activeSidebarButton'" disabled>
-              <mat-icon matListItemIcon>newspaper</mat-icon>
-              <div matListItemTitle><ng-container i18n>Blogs</ng-container></div>
-          </mat-list-item> -->
+    <!-- Books -->
+    <mat-list-item
+      matRipple
+      routerLink="/books"
+      class="sidebarButton"
+      routerLinkActive="activeSidebarButton"
+      (click)="closeSidenav()"
+    >
+      <mat-icon fontIcon="auto_stories" matListItemIcon disabled />
+      <div matListItemTitle>Books</div>
+    </mat-list-item>
+
+    <!-- Cookbook -->
+    <mat-list-item
+      matRipple
+      routerLink="/cookbook"
+      class="sidebarButton"
+      routerLinkActive="activeSidebarButton"
+      (click)="closeSidenav()"
+    >
+      <mat-icon fontIcon="restaurant_menu" matListItemIcon />
+      <div matListItemTitle>Noah's Kitchen</div>
+      <i matListItemLine>Cookbook</i>
+    </mat-list-item>
   </div>
 
   <!-- Bottom list -->
