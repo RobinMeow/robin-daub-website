@@ -3,7 +3,7 @@ import { provideRouter, withInMemoryScrolling } from '@angular/router';
 import { provideAnimations } from '@angular/platform-browser/animations';
 
 import { routes } from './app.routes';
-import { provideFirstore, providePwa } from '@providers';
+import { provideFirstore } from '@providers';
 import { provideHttpClient } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
@@ -16,7 +16,6 @@ export const appConfig: ApplicationConfig = {
       }),
     ),
     provideAnimations(),
-    providePwa(),
     provideHttpClient(),
     provideFirstore(),
   ],

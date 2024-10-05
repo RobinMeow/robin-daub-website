@@ -26,3 +26,7 @@ A little bit about myself.
 - There should be a section with "your apps" and within your app a "Firebase Admin SDK" which will display your firebase configuration
 
 > Firebase Console UI updates regulary. Literally everytime Im on it, its new.
+
+## Deploy Troubleshooting
+
+if you encounter errors like "Failed to get project" or "no access" try loggin out and in again. `firebase logout` and `firebase login`
