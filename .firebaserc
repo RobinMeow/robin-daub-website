@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "default": "robinshomepage-c5bca"
+  },
+  "targets": {
+    "robinshomepage-c5bca": {
+      "hosting": {
+        "robin-daub-website": ["robinshomepage-c5bca"]
+      }
+    }
+  }
+}
