@@ -103,10 +103,11 @@
       alt="a random cat"
       width="200"
       height="200"
+      [src]="catSrc()"
       class="cat-img"
-      hidden
+      [hidden]="catSrc() == null"
     />
-    <!-- because image coes up and down, each time the loading bar is visible -->
+    <!-- because image goes up and down, each time the loading bar is visible -->
     <div class="prevent-image-moving-up-and-down">
       @if (isLoadingCat()) {
         <mat-progress-bar color="accent" mode="indeterminate" />

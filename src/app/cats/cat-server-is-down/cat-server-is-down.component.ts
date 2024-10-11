@@ -5,7 +5,7 @@ import { MatSnackBarRef } from '@angular/material/snack-bar';
 @Component({
   selector: 'cats-cat-server-is-down',
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './cat-server-is-down.component.html',
   styleUrl: './cat-server-is-down.component.scss',
   // changeDetection: ChangeDetectionStrategy.OnPush
